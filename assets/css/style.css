@@ -6,41 +6,258 @@ html {
 
 main {
     background-color: hsl(210, 46%, 95%);
-    padding: 1rem;
+    padding: 5rem 0;
     border-radius: 1rem;
 }
 
-.comment-1{
+.comment-1,
+.comment-2,
+.comment-3,
+.comment-4,
+.comment-5 {
+    padding: 2rem 3rem 3rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.comment-1 {
+    background-image: url(../../images/bg-pattern-quotation.svg);
     background-color: hsl(263, 55%, 52%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: 89% top;
 }
 
-.comment-2{
+.comment-2 {
     background-color: hsl(217, 19%, 35%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
 }
 
-.comment-3{
+.comment-3 {
     background-color: hsl(0, 0%, 100%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
 }
 
-.comment-4{
+.comment-4 {
     background-color: hsl(219, 29%, 14%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
 }
 
-.comment-5{
+.comment-5 {
     background-color: hsl(0, 0%, 100%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
+}
+
+.container-presentation {
+    display: flex;
+}
+
+.pictures {
+    margin: 0 1.5rem 0 0;
+}
+
+img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 3rem;
+    max-width: 100%;
+    display: block;
+}
+
+.picture-1,
+.picture-4 {
+    border: 0.15rem solid hsl(263, 55%, 70%);
+}
+
+.picture-2,
+.picture-3,
+.picture-5 {
+    border: 0.15rem solid hsla(0, 0%, 100%, 65%);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-white,
+.personal-capacity-white,
+.title-white,
+.testimonials-1,
+.testimonials-2,
+.testimonials-4 {
+    color: #fff;
+}
+
+.name,
+.name-white {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 .25rem;
+}
+
+.personal-capacity,
+.personal-capacity-white {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: .5;
+    margin: 0 0 .25rem;
+}
+
+.title,
+.title-white {
+    font-size: 1.76rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 2rem 0;
+}
+
+.testimonials-1,
+.testimonials-2,
+.testimonials-3,
+.testimonials-4,
+.testimonials-5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    opacity: .7;
+}
+
+.testimonials-1,
+.testimonials-3 {
+    padding-right: 1.5rem;
+}
+
+.testimonials-4 {
+    padding: .1rem;
+}
+
+.testimonials-5 {
+    padding: .15rem;
+}
+
+@media only screen and (min-width: 380px) {
+
+    .container {
+        max-width: 37.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem 4.2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-self: center;
+        row-gap: 2rem;
+        width: 94rem;
+        max-width: 100vw;
+        max-height: 100%;
+    }
+
+    .container-1,
+    .container-2 {
+        display: flex;
+        width: 69.5rem;
+        height: 29rem;
+        column-gap: 2rem;
+    }
+
+    .comment-1,
+    .comment-4 {
+        width: 45rem;
+    }
+
+    .comment-2,
+    .comment-3 {
+        width: 22.5rem;
+    }
+
+    .comment-5 {
+        width: 22.5rem;
+        height: 60rem;
+    }
+
+    .comment-1,
+    .comment-2,
+    .comment-3,
+    .comment-4,
+    .comment-5 {
+        margin: 0;
+        padding: 2.5rem;
+    }
+
+    .testimonials-1 {
+        font-size: 1.1rem;
+    }
+
+    .testimonials-1,
+    .testimonials-2,
+    .testimonials-3,
+    .testimonials-4,
+    .testimonials-5 {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        width: 111rem;
+        align-content: space-between;
+
+    }
+
+    .container-1,
+    .container-2 {
+        width: 83rem;
+    }
+
+    .comment-1,
+    .comment-4 {
+        width: 55rem;
+    }
+
+    .comment-2,
+    .comment-3 {
+        width: 27.5rem;
+    }
+
+    .comment-5 {
+        width: 26rem;
+        height: 60rem;
+    }
+
+    .testimonials-3 {
+        padding-right: .25rem;
+    }
+
+}
+
+@media only screen and (min-width: 3840px){
+
+    .container {
+        flex-direction: row;
+    }
+
+    .comment-5 {
+        position: relative;
+        top: -31rem;
+        left: 2rem;
+    }
 }
