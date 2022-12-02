@@ -216,6 +216,7 @@ img {
 
     .container {
         width: 111rem;
+        height: 60rem;
         align-content: space-between;
         flex-direction: row;
     }
