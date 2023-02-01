@@ -43,7 +43,7 @@ Os usuários devem ser capazes de:
     <img width="1024px" src="assets/presentation/desktop.png"></img>
 </p>
 
-### Link: (Testimonials Grid)
+### Link: (Testimonials Grid)[https://mathmattar.github.io/03-testimonials-grid-section/]
 
 ## Processo
 
